@@ -1,0 +1,13 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Новости на сайте{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>{{ articles.title }}</h1>
+        <p>{{ articles.full_text }}</p>
+        <p>{{ articles.date }}</p>
+    </div>
+
+    {# This is comment in Jinja #}
+{% endblock %}
